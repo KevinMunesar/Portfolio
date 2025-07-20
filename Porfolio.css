@@ -1,0 +1,202 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: darkgrey;
+}
+header{
+    background-color: rgb(134, 134, 134);
+}
+
+.light-mode {
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
+.Image-Container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#ESB{
+    width: 12%;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+
+}
+
+#CB{
+    width: 12%;
+    height: auto;  
+    float: right;  
+    margin-right: 20px;
+
+}
+
+#LP{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+#AboutMeText{
+    margin-right: 100px;
+}
+
+#banner{
+    height: 100px;
+    width: auto;
+}
+
+#Skills{
+
+    
+}
+
+#Skills{
+    width: 100%;
+    padding: 50px;
+}
+
+#QC-Photo{
+    width: 25%;
+    height: auto;
+    float: left;
+
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+
+}
+
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;}
+}
+
+#QCXP-text{
+    margin-right: 100px;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0px;
+  clear: both;
+}
+
+.footer-content h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: #ca66df;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 480px){
+    header{
+        font-size: 1vw;
+
+    }
+    .Image-Container{
+        font-size: 1vw;
+    }
+    .QCXP{
+        font-size: 1vw;
+
+    }
+
+    .Skills{
+        font-size: 1vw;
+    }
+    
+    footer{
+        font-size: 1vw;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 481px){
+    header{
+
+    }
+    .Image-Container{
+
+    }
+    .QCXP{
+
+
+    }
+
+    .Skills{
+
+    }
+    
+    footer{
+
+    }
+}
+
+@media only screen and (min-width: 781px){
+    header{
+
+    }
+    .Image-Container{
+
+    }
+    .QCXP{
+
+
+    }
+
+    .Skills{
+
+    }
+    
+    footer{
+
+    }
+}
+
+@media only screen and (min-width: 1281px){
+    header{
+
+    }
+    .Image-Container{
+
+    }
+    .QCXP{
+
+
+    }
+
+    .Skills{
+
+    }
+    
+    footer{
+
+    }
+}

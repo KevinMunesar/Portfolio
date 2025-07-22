@@ -1,13 +1,21 @@
 body {
     transition: background-color 0.3s, color 0.3s;
     background-color: darkgrey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header{
-    background-color: rgb(134, 134, 134);
+    background-color: #46494c;
+    color: #e6e6e6;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#Top{
+    text-align: center;
 }
 
 .light-mode {
-    background-color: #e6e6e6;
+    background-color: #DCDCDD;
     color: #000000;
 }
 
@@ -40,6 +48,19 @@ header{
     margin-left: 100px;
 }
 
+.marquee{
+overflow: hidden;
+width: 100%;
+}
+
+
+
+.quotes{
+display: inline-block;
+overflow: hidden;
+
+}
+
 #AboutMeText{
     margin-right: 100px;
 }
@@ -47,11 +68,6 @@ header{
 #banner{
     height: 100px;
     width: auto;
-}
-
-#Skills{
-
-    
 }
 
 #Skills{
@@ -78,6 +94,31 @@ header{
 #QCXP-text{
     margin-right: 100px;
 }
+
+.Hobbies{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+.card{
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 .footer {
   background-color: #1e1e1e;

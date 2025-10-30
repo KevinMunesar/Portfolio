@@ -1,7 +1,10 @@
 body {
     transition: background-color 0.3s, color 0.3s;
     background-color: darkgrey;
+    color: #000000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 100%;
+    margin: 0 auto;
 }
 header{
     background-color: #46494c;
@@ -11,7 +14,10 @@ header{
 }
 
 #Top{
+    margin-top: 50px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .light-mode {
@@ -19,25 +25,71 @@ header{
     color: #000000;
 }
 
+.form-check{
+    text-align: right;
+    
+}
+
+#Title{
+    margin-top: 50px;
+}
+
+#toggleButtonLabel{
+    margin-top: 65px;
+} 
+#toggleButton {
+    margin-top: 70px;
+}
+
+
+#Logo{
+    width: 150px;
+    height: 150px;
+    height: auto;
+
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: #555;
+  color: #ff9900;
+  border-radius: 4px;
+}
+
 .Image-Container{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 #ESB{
-    width: 12%;
-    height: auto;
+    width: auto;
+    height:650px;
     float: left;
-    margin-left: 20px;
 
 }
 
 #CB{
-    width: 12%;
-    height: auto;  
+    width: auto;
+    height:650px;  
     float: right;  
-    margin-right: 20px;
 
 }
 
@@ -45,23 +97,43 @@ header{
     height: 300px;
     width: auto;
     border-radius: 10px;
+    margin-right: 50px;
     margin-left: 100px;
 }
 
+#Quotes-Title{
+
+    padding-left: 20px;
+
+
+}
 .marquee{
-overflow: hidden;
-width: 100%;
+    overflow: hidden;
+    width: 100%;
+
 }
 
-
-
+.marquee-text{
+    margin-bottom: 0px;
+    gap: 100px;
+    width: 100px;
+    font-style: italic;
+}
 .quotes{
-display: inline-block;
-overflow: hidden;
-
+    justify-content: space-between;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 200px;
+    margin-top: 10px;
 }
 
-#AboutMeText{
+
+#kevin, #AboutMeText{
+    display: inline;
+    text-align: center;
+}
+
+#AboutMe{
     margin-right: 100px;
 }
 
@@ -75,20 +147,31 @@ overflow: hidden;
     padding: 50px;
 }
 
+#Skills-Section{
+    padding-top: 195px;
+    padding-left: 20px;
+}
+
 #QC-Photo{
     width: 25%;
     height: auto;
     float: left;
+    border-radius: 50px;
+    padding: 20px;
 
     scale: .8; opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
     animation-range: 250px 500px;
-
 }
 
 @keyframes fade-in {
     to {scale: 1; opacity: 1;}
+}
+
+#QCXP-Title{
+    padding-top: 20px;
+
 }
 
 #QCXP-text{
@@ -97,25 +180,32 @@ overflow: hidden;
 
 .Hobbies{
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
     padding: 20px;
 }
+
+#Hobbies-Title{
+   padding-left: 20px;    
+}
+
 .card{
     padding: 25px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.5);
     max-width: 350px;
+    width: 100%;
     text-align: center;
 }
 
+#Hobbies-Boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    padding-bottom: 50px;
 
-
-
-
-
+}
 
 
 
@@ -154,14 +244,63 @@ overflow: hidden;
   margin-top: 15px;
 }
 
-@media only screen and (min-width: 480px){
-    header{
-        font-size: 1vw;
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+
+    body{
+        font-size: 5vw;
     }
     .Image-Container{
         font-size: 1vw;
+
     }
+    #ESB{
+        display: none;
+    }
+
+    #CB{
+        display: none;
+    }
+
+    #AboutMe{
+        text-align: center;
+        margin: 0px;
+
+    }
+
+    #LP{
+        margin: 0;
+    }
+    #About-Me-Section{
+        font-size: 5vw; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .QCXP{
         font-size: 1vw;
 
@@ -172,14 +311,14 @@ overflow: hidden;
     }
     
     footer{
-        font-size: 1vw;
+        font-size: 5vw;
     }
 
 
 
 }
 
-@media only screen and (min-width: 481px){
+@media only screen and (max-width: 780px){
     header{
 
     }
@@ -200,7 +339,7 @@ overflow: hidden;
     }
 }
 
-@media only screen and (min-width: 781px){
+@media only screen and (max-width: 1280px){
     header{
 
     }
@@ -241,3 +380,4 @@ overflow: hidden;
 
     }
 }
+
